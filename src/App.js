@@ -8,7 +8,7 @@ function App() {
       <header className="App-header">
        
         <h1>
-        dfgikdgoid
+        React app
         </h1>
         <Weather/>
       </header>
