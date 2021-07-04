@@ -12,7 +12,7 @@ function App() {
         </h1>
         <Weather/>
       </header>
-      <p className="sourceline">
+      <footer className="sourceline">
 <a href="https://github.com/dajanafaris/react-weather"
 target="_blank"
 rel="noreferrer"
@@ -23,7 +23,7 @@ target="_blank"
 rel="noeferrer"
 className="codeLink">Dajana Faris </a>
 
-      </p>
+      </footer>
     </div>
   );
 }

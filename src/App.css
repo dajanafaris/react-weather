@@ -1,7 +1,6 @@
-.container {
-  height: 400px;
-  text-align: center;
-  display: block;
+.App {
+  max-width: 600px;
+  margin: 30px auto;
 }
 
 .btnSearch,
@@ -49,7 +48,7 @@
 h1 {
   margin: 30px;
   color: #006ba4;
-  font-weight: 700;
+  font-weight: 600;
   margin-bottom: 0;
   padding-top: 10px;
 }
@@ -71,7 +70,7 @@ h3:first-letter {
 
 #image {
   margin-bottom: 20px;
-  width: 350px;
+  width: 300px;
   display: block;
   margin-left: 80px;
 }
@@ -114,10 +113,6 @@ h3:first-letter {
   opacity: 0, 5;
 }
 
-.text-center {
-  margin: 10px;
-}
-
 #date {
   margin-left: 10px;
 }
@@ -150,15 +145,12 @@ h3:first-letter {
 
 .sourceLine {
   color: #b8ff80;
-  text-align: center;
   font-size: 12px;
-  font-weight: normal;
-  margin-bottom: 40px;
+  text-align: center;
 }
 
 .codeLink {
   color: #9537fc;
-  margin-top: 0;
 }
 
 .codeLink:hover {
