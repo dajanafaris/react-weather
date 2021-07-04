@@ -1,5 +1,5 @@
 import React from "react";
-import ForecastIcon from "./visuals/weather.png";
+
 
 export default function Weather(){
 
@@ -47,7 +47,8 @@ export default function Weather(){
           <div className="row">
             <div className="col-md-8">
               <div className="center-block">
-                <img src="visuals/weather" id="image" />
+                <img src="https://image.freepik.com/free-vector/weather-forecast-concept-woman-forecasting-weather-tv-news-flat-illustration-forecast-weather-meteorology-climate_53562-11779.jpg" 
+                id="image" />
               </div>
             </div>
             <div className="col-md-4">
