@@ -1,5 +1,7 @@
 .container {
   height: 400px;
+  text-align: center;
+  display: block;
 }
 
 .btnSearch,
@@ -143,4 +145,21 @@ h3:first-letter {
   margin: 40px 0;
   padding-bottom: 50px;
   color: #006ba4;
+}
+
+.sourceLine {
+  color: #b8ff80;
+  text-align: center;
+  font-size: 12px;
+  font-weight: normal;
+  margin-bottom: 40px;
+}
+
+.codeLink {
+  color: #9537fc;
+  margin-top: 0;
+}
+
+.codeLink:hover {
+  color: #f8b62d;
 }
