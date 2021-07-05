@@ -20,7 +20,7 @@ className="codeLink">Open source code </a>{" "}
 built by {" "}
 <a href="https://www.linkedin.com/in/dajana-faris-742673171/"
 target="_blank"
-rel="noeferrer"
+rel="noreferrer"
 className="codeLink">Dajana Faris </a>
 
       </footer>

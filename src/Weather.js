@@ -40,14 +40,14 @@ export default function Weather(){
           </h2>
           <strong id="temperature"></strong>
           <span className="units">
-            <a href="#" id="celsius-link">
+            <span href="#" id="celsius-link">
               C°
-            </a>
+            </span>
           </span>
           <div className="row">
             <div className="col-md-8">
               <div className="center-block">
-                <img src="https://image.freepik.com/free-vector/weather-forecast-concept-woman-forecasting-weather-tv-news-flat-illustration-forecast-weather-meteorology-climate_53562-11779.jpg" 
+                <span src="https://image.freepik.com/free-vector/weather-forecast-concept-woman-forecasting-weather-tv-news-flat-illustration-forecast-weather-meteorology-climate_53562-11779.jpg" 
                 id="image" />
               </div>
             </div>
