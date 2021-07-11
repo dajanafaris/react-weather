@@ -1,6 +1,10 @@
 .App {
-  max-width: 600px;
-  margin: 30px auto;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.App footer {
+  text-align: center;
 }
 
 .btnSearch,
@@ -37,11 +41,15 @@
 .weather-app {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   background: #e0eafc;
-  max-width: 800px;
-  margin: 40px auto;
-  padding: 10px;
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 20px;
   border: 1px solid #7868fc;
   border-radius: 20px;
+}
+
+.weather-wrapper {
+  margin: 30px auto;
 }
 
 h1 {
@@ -74,11 +82,6 @@ h3:first-letter {
   margin-left: 80px;
 }
 
-.weather-wrapper {
-  max-width: 400;
-  margin: 30px auto;
-}
-
 .center-block {
   display: block;
   margin: 0 auto;
@@ -91,7 +94,7 @@ h3:first-letter {
   font-weight: 500;
 }
 #celsius-link {
-  font-size: 40px;
+  font-size: 20px;
   color: #006ba4;
   text-decoration: none;
 }
@@ -106,10 +109,6 @@ h3:first-letter {
   margin: 0 auto;
   color: #006ba4;
   font-size: 20px;
-}
-.line-style {
-  border: 1px solid #845ec2;
-  opacity: 0, 5;
 }
 
 #date {
@@ -145,7 +144,6 @@ h3:first-letter {
 .sourceLine {
   color: #b8ff80;
   font-size: 12px;
-  text-align: center;
 }
 
 .codeLink {
