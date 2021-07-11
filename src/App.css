@@ -70,10 +70,11 @@ h2 {
 }
 li {
   list-style: none;
-  margin: 10px;
+  margin: 20px;
   color: #006ba4;
   font-size: 20px;
   font-weight: 1px;
+  display: block;
 }
 
 h3:first-letter {
@@ -113,15 +114,14 @@ h3:first-letter {
 #date {
   margin-left: 10px;
 }
-#description {
-  margin-left: 10px;
-  text-transform: capitalize;
-  font-weight: 700;
-}
 
 .col-6 {
   color: #006ba4;
   font-size: 20px;
+}
+.col-2 {
+  text-align: center;
+  margin-left: 80px;
 }
 
 .weather-forecast-temperature-min {
