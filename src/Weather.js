@@ -1,4 +1,5 @@
 import React from "react";
+import "./Weather.css";
 
 
 export default function Weather(){
@@ -9,7 +10,7 @@ export default function Weather(){
         <div className="weather-wrapper">
           <form id="search-form" className="mb-3">
             <div className="row">
-              <div className="col-6">
+              <div className="col-5">
                 <input
                   type="search"
                   className="form-control"
@@ -18,8 +19,10 @@ export default function Weather(){
                   autocomplete="off"
                 />
               </div>
-              <div className="col-2">
-                <button type="button" className="btnSearch" id="search-button">
+              <div className="col-3">
+                <button type="button" 
+                className="btnSearch"
+                 id="search-button">
                   Search
                 </button>
               </div>
@@ -27,9 +30,8 @@ export default function Weather(){
                 <button
                   type="button"
                   className="btnLocation"
-                  id="location-button"
-                >
-                  Current Location
+                  id="location-button">
+                  🚩Location
                 </button>
               </div>
             </div>
