@@ -44,20 +44,6 @@
   border: 1px solid #24acd6;
 }
 
-.weather-app {
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  background: #e0eafc;
-  max-width: 600px;
-  margin: 20px auto;
-  padding: 20px;
-  border: 1px solid #7868fc;
-  border-radius: 20px;
-}
-
-.weather-wrapper {
-  margin: 30px auto;
-}
-
 h1 {
   margin: 30px;
   color: #006ba4;
@@ -121,7 +107,7 @@ h3:first-letter {
 }
 .col-2 {
   text-align: center;
-  margin-left: 80px;
+  margin-left: 40px;
 }
 
 .weather-forecast-temperature-min {

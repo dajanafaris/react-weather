@@ -1,0 +1,13 @@
+.weather-app {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  background: #e0eafc;
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 20px;
+  border: 1px solid #7868fc;
+  border-radius: 20px;
+}
+
+.weather-wrapper {
+  margin: 30px auto;
+}
