@@ -40,20 +40,26 @@ export default function Weather(){
           <h2 className="actual-time">
             <span id="date"> </span>
           </h2>
+          
           <strong id="temperature"></strong>
           <span className="units">
-            <span href="#" id="celsius-link">
-              C°
+               <span href="#" id="celsius-link">
+             30 C°
             </span>
+              
           </span>
           <div className="row">
-            <div className="col-md-8">
+            <div className="col-6">
               <div className="center-block">
-                <span src="https://image.freepik.com/free-vector/weather-forecast-concept-woman-forecasting-weather-tv-news-flat-illustration-forecast-weather-meteorology-climate_53562-11779.jpg" 
-                id="image" />
-              </div>
-            </div>
-            <div className="col-md-4">
+             
+                <img src="https://image.freepik.com/free-vector/weather-forecast-concept-woman-forecasting-weather-tv-news-flat-illustration-forecast-weather-meteorology-climate_53562-11779.jpg"
+                alt="Mostly Cloudy"
+                className="visual" />
+
+                </div>
+           </div>
+                
+            <div className="col-4">
               <ul className="weather-info"></ul>
               <p id="description"></p>
               <li>

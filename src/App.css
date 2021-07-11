@@ -27,6 +27,12 @@
   border: 1px solid #9537fc;
 }
 
+.visual {
+  display: inline-block;
+  margin-right: 10px;
+  block-size: 200px;
+}
+
 .btnLocation {
   background-color: #24acd6;
   border: 1px solid #24acd6;
@@ -75,13 +81,6 @@ h3:first-letter {
   font-weight: 700;
 }
 
-#image {
-  margin-bottom: 20px;
-  width: 300px;
-  display: block;
-  margin-left: 80px;
-}
-
 .center-block {
   display: block;
   margin: 0 auto;
@@ -94,7 +93,7 @@ h3:first-letter {
   font-weight: 500;
 }
 #celsius-link {
-  font-size: 20px;
+  font-size: 40px;
   color: #006ba4;
   text-decoration: none;
 }
@@ -120,7 +119,7 @@ h3:first-letter {
   font-weight: 700;
 }
 
-.col-md-4 {
+.col-6 {
   color: #006ba4;
   font-size: 20px;
 }
