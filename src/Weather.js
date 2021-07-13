@@ -1,12 +1,18 @@
-import React from "react";
+import React, {useState} from "react";
 import axios from "axios";
 import "./Weather.css";
 
 
 export default function Weather(){
-  const apiKey ="2b3bd1a1e50c09583da5280a7c6bd061"
-  let city = "Zagreb";
-  let apiUrl =`http://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
+  const [ready, setReady]= useState(false);
+  const [temperature, setTemperature] = useState(null);
+function displayForecast(response){
+  console.log(response.data);
+  setTemperature(response.data.main.temp);
+  setReady(true);
+}
+
+if (ready) {
 
     return(
         <div className="App">
@@ -80,4 +86,12 @@ export default function Weather(){
       </div>
     </div>
   );
+} else{
+  const apiKey ="2b3bd1a1e50c09583da5280a7c6bd061"
+  let city = "Zagreb";
+  let apiUrl =`https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
+  axios.get(apiUrl).then(displayForecast);
+
+  return "Loading..."
+}
 }
