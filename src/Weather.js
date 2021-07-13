@@ -56,6 +56,8 @@ if (weatherData.ready) {
           <h1 id="city">{weatherData.city}</h1>
           <h2 className="actual-time">
             <span id="date"> </span>
+            <span className="description"> {weatherData.description}</span>
+              <p id="description"></p>
           </h2>
           
           
@@ -77,10 +79,9 @@ if (weatherData.ready) {
                 
             <div className="col-2">
               <ul className="weather-info"></ul>
-            <span lassName="description"> {weatherData.description}</span>
-              <p id="description"></p>
+            
               <li>
-                <span> Humidity:{weatherData.humidity} % </span>
+                <span> Humidity:{weatherData.humidity}%</span>
               </li>
               <li>
                <span> Wind: {weatherData.wind}km/h</span>
