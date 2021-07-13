@@ -77,7 +77,7 @@ if (weatherData.ready) {
                 
             <div className="col-2">
               <ul className="weather-info"></ul>
-            <span className="description">{weatherData.description}</span>
+            <span lassName="description"> {weatherData.description}</span>
               <p id="description"></p>
               <li>
                 <span> Humidity:{weatherData.humidity} % </span>
@@ -94,7 +94,7 @@ if (weatherData.ready) {
     </div>
   );
 } else{
-  const apiKey ="6d15a99ffb8493d1efc42cac1693ceeb"
+  const apiKey ="1e3a1ed81fb1d1edbb19cf958878c70c"
   
   let apiUrl =`https://api.openweathermap.org/data/2.5/weather?q=${props.defaultCity}&appid=${apiKey}&units=metric`;
   axios.get(apiUrl).then(displayForecast);
