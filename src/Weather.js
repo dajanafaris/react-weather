@@ -1,4 +1,5 @@
 import React, {useState} from "react";
+import FormattedDate from "./FormattedDate";
 import axios from "axios";
 import "./Weather.css";
 
@@ -16,6 +17,7 @@ function displayForecast(response){
     city: response.data.name,
     humidity:response.data.main.humidity,
     description:response.data.weather[0].description,
+    date: new Date (response.data.dt * 1000),
   });
 }
 
@@ -54,11 +56,16 @@ if (weatherData.ready) {
             </div>
           </form>
           <h1 id="city">{weatherData.city}</h1>
-          <h2 className="actual-time">
-            <span id="date"> </span>
-            <span className="description"> {weatherData.description}</span>
-              <p id="description"></p>
-          </h2>
+
+
+          <h2 className= "date"> <FormattedDate date={weatherData.date}/> </h2>
+      
+                 <h3 className="description">
+             <span id="date"> </span>
+              <span className="description"> {weatherData.description}</span>
+              
+           
+          </h3>
           
           
           <span className="temperature">{Math.round(weatherData.temperature)}</span>

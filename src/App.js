@@ -14,7 +14,7 @@ function App() {
         <h1>
         React app
         </h1>
-        <Weather defaultCity="Zagreb"/>
+        <Weather defaultCity="Pula"/>
       </header>
       <footer className="sourceline">
 <a href="https://github.com/dajanafaris/react-weather"
