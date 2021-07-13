@@ -1,7 +1,7 @@
 
 import './App.css';
 import Weather from './Weather';
-import "./Weather.css";
+
 
 function App() {
   return (
@@ -14,7 +14,7 @@ function App() {
         <h1>
         React app
         </h1>
-        <Weather/>
+        <Weather defaultCity="Zagreb"/>
       </header>
       <footer className="sourceline">
 <a href="https://github.com/dajanafaris/react-weather"

@@ -3,16 +3,23 @@ import axios from "axios";
 import "./Weather.css";
 
 
-export default function Weather(){
-  const [ready, setReady]= useState(false);
-  const [temperature, setTemperature] = useState(null);
+export default function Weather(props){
+  const [weatherData, setWeatherData] = useState({ready: false});
+
 function displayForecast(response){
   console.log(response.data);
-  setTemperature(response.data.main.temp);
-  setReady(true);
+
+  setWeatherData({
+    ready:true,
+    temperature: response.data.main.temp,
+    wind:response.data.wind.speed,
+    city: response.data.name,
+    humidity:response.data.main.humidity,
+    description:response.data.weather[0].description,
+  });
 }
 
-if (ready) {
+if (weatherData.ready) {
 
     return(
         <div className="App">
@@ -46,13 +53,13 @@ if (ready) {
               </div>
             </div>
           </form>
-          <h1 id="city"> Pula, Croatia</h1>
+          <h1 id="city">{weatherData.city}</h1>
           <h2 className="actual-time">
             <span id="date"> </span>
           </h2>
           
           
-          <span className="temperature">{Math.round(temperature)}</span>
+          <span className="temperature">{Math.round(weatherData.temperature)}</span>
           
 
           <span className="units"> C° </span>
@@ -70,12 +77,13 @@ if (ready) {
                 
             <div className="col-2">
               <ul className="weather-info"></ul>
+            <span className="description">{weatherData.description}</span>
               <p id="description"></p>
               <li>
-                Humidity:<span id="humidity"> % </span>
+                <span> Humidity:{weatherData.humidity} % </span>
               </li>
               <li>
-                Wind: <span id="wind">km/h</span>
+               <span> Wind: {weatherData.wind}km/h</span>
               </li>
             </div>
             <src id="icon" />
@@ -86,9 +94,9 @@ if (ready) {
     </div>
   );
 } else{
-  const apiKey ="2b3bd1a1e50c09583da5280a7c6bd061"
-  let city = "Zagreb";
-  let apiUrl =`https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
+  const apiKey ="6d15a99ffb8493d1efc42cac1693ceeb"
+  
+  let apiUrl =`https://api.openweathermap.org/data/2.5/weather?q=${props.defaultCity}&appid=${apiKey}&units=metric`;
   axios.get(apiUrl).then(displayForecast);
 
   return "Loading..."
