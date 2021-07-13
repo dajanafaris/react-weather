@@ -79,16 +79,25 @@ h3:first-letter {
   line-height: 1;
   font-weight: 500;
 }
-#celsius-link {
+.units {
+  font-size: 20px;
+  color: #006ba4;
+  font-weight: 400;
+  position: relative;
+  line-height: 1;
+  top: -34px;
+  margin-left: 0;
+}
+.temperature {
+  font-weight: bold;
+  margin-right: 10px;
+  margin-left: 30px;
+  position: relative;
   font-size: 40px;
   color: #006ba4;
-  text-decoration: none;
-}
-#temperature {
-  margin: 30px;
-  position: relative;
-  font-size: 50px;
-  color: #006ba4;
+  font-weight: 400;
+  line-height: 64px;
+  top: -15px;
 }
 .actual-time {
   text-align: left;

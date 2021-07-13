@@ -46,18 +46,17 @@ if (ready) {
               </div>
             </div>
           </form>
-          <h1 id="city"> Pula,Croatia </h1>
+          <h1 id="city"> Pula, Croatia</h1>
           <h2 className="actual-time">
             <span id="date"> </span>
           </h2>
           
-          <strong id="temperature"></strong>
-          <span className="units">
-               <span href="#" id="celsius-link">
-             30 C°
-            </span>
-              
-          </span>
+          
+          <span className="temperature">{Math.round(temperature)}</span>
+          
+
+          <span className="units"> C° </span>
+            
           <div className="row">
             <div className="col-6">
               <div className="center-block">
