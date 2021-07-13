@@ -27,7 +27,7 @@ if (weatherData.ready) {
         <div className="weather-wrapper">
           <form id="search-form" className="mb-3">
             <div className="row">
-              <div className="col-5">
+              <div className="col-6">
                 <input
                   type="search"
                   className="form-control"
@@ -43,12 +43,12 @@ if (weatherData.ready) {
                   Search
                 </button>
               </div>
-              <div className="col-4">
+              <div className="col-2">
                 <button
                   type="button"
                   className="btnLocation"
                   id="location-button">
-                  🚩Location
+                  Location
                 </button>
               </div>
             </div>
@@ -84,7 +84,7 @@ if (weatherData.ready) {
                 <span> Humidity:{weatherData.humidity}%</span>
               </li>
               <li>
-               <span> Wind: {weatherData.wind}km/h</span>
+               <span> Wind:{weatherData.wind}km/h</span>
               </li>
             </div>
             <src id="icon" />

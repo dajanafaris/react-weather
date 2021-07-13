@@ -7,13 +7,13 @@
   text-align: center;
 }
 
-.btnSearch,
-.btnLocation {
+.btnSearch {
   color: rgb(255, 255, 255);
   padding: 5px 15px;
   border-radius: 5px;
   box-shadow: 2px 2px 4px #cacaca;
   display: inline-block;
+  margin-left: 20px;
 }
 
 .btnSearch {
@@ -36,6 +36,11 @@
 .btnLocation {
   background-color: #24acd6;
   border: 1px solid #24acd6;
+  color: rgb(255, 255, 255);
+  padding: 5px 15px;
+  border-radius: 5px;
+  margin-right: 40px;
+  display: inline-block;
 }
 
 .btnLocation:hover {
@@ -112,10 +117,6 @@ h3:first-letter {
 .col-6 {
   color: #006ba4;
   font-size: 20px;
-}
-.col-2 {
-  text-align: center;
-  margin-left: 40px;
 }
 
 .weather-forecast-temperature-min {
