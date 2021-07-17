@@ -10,10 +10,6 @@ function App() {
         <div>
           {}
         </div>
-       
-        <h1>
-        React app
-        </h1>
         <Weather defaultCity="Pula"/>
       </header>
       <footer className="sourceline">

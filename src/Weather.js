@@ -9,6 +9,7 @@ export default function Weather(props){
   const[city, setCity] = useState (props.defaultCity);
 
 function handleResponse(response){
+  console.log(response.data);
 
   setWeatherData({
     ready:true,
@@ -18,6 +19,7 @@ function handleResponse(response){
     humidity:response.data.main.humidity,
     description:response.data.weather[0].description,
     date: new Date (response.data.dt * 1000),
+    icon: response.data.weather[0].icon,
   });
 }
 function handleSubmit(event){
@@ -43,7 +45,7 @@ if (weatherData.ready) {
         <div className="App">
       <div className="weather-app">
         <div className="weather-wrapper">
-          <form onSubmit={handleSubmit} className="mb-3">
+          <form className="mb-3" onSubmit={handleSubmit} >
             <div className="row">
               <div className="col-6">
                 <input
