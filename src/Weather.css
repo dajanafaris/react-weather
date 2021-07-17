@@ -1,13 +1,28 @@
 .weather-app {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-  background: #e0eafc;
+  background-size: cover;
   max-width: 600px;
   margin: 20px auto;
   padding: 20px;
   border: 1px solid #7868fc;
   border-radius: 20px;
+  background: linear-gradient(-45deg, #ee7752, #f8ffae, #9cecfb, #191654);
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
 }
 
 .weather-wrapper {
   margin: 30px auto;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }

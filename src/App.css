@@ -51,7 +51,7 @@
 
 h1 {
   margin: 30px;
-  color: #006ba4;
+  color: #000000;
   font-weight: 600;
   margin-bottom: 0;
   padding-top: 10px;
@@ -59,14 +59,14 @@ h1 {
 h2 {
   margin: 15px;
   font-size: 20px;
-  color: #006ba4;
+  color: #000000;
   font-weight: 400;
   margin-left: 300px;
 }
 li {
   list-style: none;
   margin: 20px;
-  color: #006ba4;
+  color: #000000;
   font-size: 20px;
   font-weight: 1px;
   display: block;
@@ -74,7 +74,7 @@ li {
 
 h3 {
   text-transform: capitalize;
-  color: #006ba4;
+  color: #000000;
 }
 
 .description {
@@ -89,7 +89,7 @@ h3 {
 
 .units {
   font-size: 20px;
-  color: #006ba4;
+  color: #000000;
   font-weight: 400;
   position: relative;
   line-height: 1;
@@ -102,7 +102,7 @@ h3 {
   margin-left: 10px;
   position: relative;
   font-size: 40px;
-  color: #006ba4;
+  color: #000000;
   font-weight: 400;
   line-height: 64px;
   top: -15px;
