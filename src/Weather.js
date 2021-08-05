@@ -59,11 +59,11 @@ if (weatherData.ready) {
                 />
               </div>
               <div className="col-3">
-                <button type="button" 
-                className="btnSearch"
-                 id="search-button">
-                  Search
-                </button>
+                 <input
+                type="submit"
+                value="Search"
+                className="btn btn-primary w-100"
+              />
               </div>
         
             </div>

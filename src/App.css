@@ -11,30 +11,23 @@
   margin-left: 50px;
 }
 
-.btnSearch {
-  color: rgb(255, 255, 255);
+.btn {
+  background: #885df1;
+  font-size: 16px;
   padding: 5px 15px;
-  border-radius: 5px;
-  box-shadow: 2px 2px 4px #cacaca;
-  display: inline-block;
+  border: none;
+  height: 40px;
   margin-left: 60px;
 }
-
-.btnSearch {
-  background-color: #9537fc;
-  border: 1px solid #9537fc;
-}
-
-.btnSearch:hover {
-  background-color: #ffffff;
-  color: #9537fc;
-  border: 1px solid #9537fc;
+.btn:hover {
+  background-color: #885df1;
 }
 
 .visual {
   display: inline-block;
   margin-right: 10px;
   block-size: 200px;
+  margin-top: 15px;
 }
 
 h1 {

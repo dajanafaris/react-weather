@@ -1,5 +1,6 @@
 .WeatherForecast {
   text-align: center;
+  margin-top: -70px;
 }
 
 .WeatherForecast-temerature-min {
