@@ -64,14 +64,7 @@ if (weatherData.ready) {
                   Search
                 </button>
               </div>
-              <div className="col-2">
-                <button
-                  type="button"
-                  className="btnLocation"
-                  id="location-button">
-                  Location
-                </button>
-              </div>
+              
             </div>
           </form>
           <WeatherInfo data={weatherData}/>

@@ -7,13 +7,17 @@
   text-align: center;
 }
 
+.form-control {
+  margin-left: 50px;
+}
+
 .btnSearch {
   color: rgb(255, 255, 255);
   padding: 5px 15px;
   border-radius: 5px;
   box-shadow: 2px 2px 4px #cacaca;
   display: inline-block;
-  margin-left: 20px;
+  margin-left: 60px;
 }
 
 .btnSearch {
@@ -33,22 +37,6 @@
   block-size: 200px;
 }
 
-.btnLocation {
-  background-color: #24acd6;
-  border: 1px solid #24acd6;
-  color: rgb(255, 255, 255);
-  padding: 5px 15px;
-  border-radius: 5px;
-  margin-right: 40px;
-  display: inline-block;
-}
-
-.btnLocation:hover {
-  background-color: #ffffff;
-  color: #24acd6;
-  border: 1px solid #24acd6;
-}
-
 h1 {
   margin: 30px;
   color: #000000;
@@ -61,7 +49,7 @@ h2 {
   font-size: 20px;
   color: #000000;
   font-weight: 400;
-  margin-left: 300px;
+  margin-left: 350px;
 }
 li {
   list-style: none;
@@ -70,6 +58,7 @@ li {
   font-size: 20px;
   font-weight: 1px;
   display: block;
+  margin-left: 60px;
 }
 
 h3 {
@@ -109,9 +98,10 @@ h3 {
 }
 .actual-time {
   text-align: left;
-  margin: 0 auto;
+
   color: #006ba4;
   font-size: 20px;
+  margin-left: 20px;
 }
 
 .col-6 {
