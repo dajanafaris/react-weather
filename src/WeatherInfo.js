@@ -1,6 +1,8 @@
 import React from "react";
 import FormattedDate from "./FormattedDate";
 import WeatherIcon from "./WeatherIcon";
+import Logo from "./Logo.svg";
+
 
 export default function WeatherInfo(props){
     return (
@@ -27,10 +29,9 @@ export default function WeatherInfo(props){
             <div className="col-6">
               <div className="center-block">
              
-                <img src="https://image.freepik.com/free-vector/weather-forecast-concept-woman-forecasting-weather-tv-news-flat-illustration-forecast-weather-meteorology-climate_53562-11779.jpg"
-                alt="Mostly Cloudy"
-                className="visual" />
-
+<div>
+                <img src = {Logo} width="300" alt="logo" className="Visual"/>
+</div>
                 </div>
            </div>
                 
