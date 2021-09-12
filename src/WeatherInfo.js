@@ -37,7 +37,7 @@ export default function WeatherInfo(props) {
         <div className="col-6">
           <div className="center-block">
             <div>
-              <img src={Logo} width="300" alt="logo" className="Visual" />
+              <img src={Logo} width="300px" alt="logo" />
             </div>
           </div>
         </div>
