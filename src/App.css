@@ -1,5 +1,5 @@
 .App {
-  max-width: 800px;
+  max-width: 100%;
   margin: 0 auto;
 }
 
@@ -8,7 +8,8 @@
 }
 
 .form-control {
-  margin-left: 50px;
+  margin-left: 20px;
+  max-width: 100%;
 }
 
 .btn {
@@ -18,8 +19,14 @@
   padding: 5px 15px;
   border: none;
   height: 38px;
-  margin-left: 60px;
+  margin-left: 50px;
+  max-width: 100%;
 }
+
+.btn-primary {
+  max-width: 100%;
+}
+
 .btn:hover {
   background-color: #885df1;
 }
@@ -30,6 +37,7 @@
   block-size: 200px;
   margin-top: 15px;
   border-radius: 20px;
+  max-width: 100%;
 }
 
 h1 {
@@ -44,7 +52,6 @@ h2 {
   font-size: 20px;
   color: #000000;
   font-weight: 400;
-  margin-left: 350px;
 }
 li {
   list-style: none;
